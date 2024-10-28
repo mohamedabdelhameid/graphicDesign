@@ -1,0 +1,170 @@
+.Div1{
+  min-height: 100vh;
+}
+.homing .img img{
+  transform: translateX(50%);
+  margin: 10px;
+  border-radius: 50%;
+}
+.homing p{
+  width:50%;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+}
+.homing .socIal a{
+  text-decoration: none;
+  color: gray;
+  font-size: 30px;
+  margin: 5px;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+.homing .socIal a:hover{
+  color: #f6f6f6;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+/* .pMain{
+  font-size: 18px;
+  line-height: 1.8;
+} */
+.son0{
+  color: #a722fa;
+}
+.son{
+  color: #22fa99;
+}
+.grids{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 15px;
+}
+.grids div img{
+  width: 100%;
+  height: 300px;
+}
+.grids div p{
+  font-size: 20px;
+  direction: rtl;
+}
+.Contact{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+
+}
+.Contact form input,
+.Contact form textarea{
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
+.ffirst{
+  position: relative;
+  cursor: pointer;
+}
+.ffirst::before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.ffirst:hover:before{
+  width: 100%;
+}
+.Contact form .btn{
+  margin: 10px;
+}
+.sonn{
+  color: #fa9222;
+}
+@media (max-width:768px) {
+  .grid2{
+    grid-template-columns: auto;
+  }
+}
+@media (min-width:768px) and (max-width: 1024px) {
+  .imgContact{
+    height: 100%;
+  }
+}
+@media (max-width:768px) {
+  .Contact{
+    grid-template-columns: auto;
+  }
+}
+
+.bblockk{
+  animation: appea1r 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.bblockk2{
+  animation: appea2r 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.bblockk23{
+  animation: appea2r 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
+@keyframes appea1r {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes appea2r {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+.pro23{
+  animation: projec23t 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes projec23t {
+  from{
+    scale: 0;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
+.pro2343{
+  animation: projec253t 2s linear;
+  /* animation-timeline: view(); */
+}
+@keyframes projec253t {
+  from{
+    scale: 0;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
